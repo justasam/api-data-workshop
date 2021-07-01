@@ -9,7 +9,7 @@ const Footer = () => {
         <Text small type="secondary">
           <Text b>API & Data workshop</Text> 2021
         </Text>
-        <Link href="#" block>
+        <Link href="https://github.com/justasam/api-data-workshop" block>
           View on GitHub
         </Link>
       </Grid.Container>
