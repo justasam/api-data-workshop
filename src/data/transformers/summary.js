@@ -5,7 +5,7 @@ const transformGlobalInfo = info => {
   }))
 }
 
-const transformCountries = countries => countries.map(({ Country }) => Country)
+const transformCountries = countries => countries.map(({ Slug }) => Slug)
 
 export const transformSummary = summary => {
   if (!summary.Global || !summary.Countries) return null
