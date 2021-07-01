@@ -1,0 +1,6 @@
+export { default as Header } from './Header'
+export { default as Footer } from './Footer'
+export { default as Chart } from './Chart'
+export { default as StatCard } from './StatCard'
+export { default as CountryStats } from './CountryStats'
+export { default as GlobalStats } from './GlobalStats'
