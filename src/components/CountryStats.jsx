@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Grid, Text, Card, AutoComplete, Loading, Radio } from '@geist-ui/react'
 
 import { getCountryDayOne } from '../data/api'
+import { transformCountryDayOne } from '../data/transformers'
 import Chart from './Chart'
 
 const generateCountryOptions = countries => {
@@ -39,8 +40,9 @@ const CountryStats = ({ countries }) => {
       setLoading(true)
 
       const countryDayOne = await getCountryDayOne(selectedCountry, selectedType)
+      const transformedDayOne = await transformCountryDayOne(countryDayOne)
 
-      setChartData(countryDayOne)
+      setChartData(transformedDayOne)
       setLoading(false)
     }
 
